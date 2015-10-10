@@ -9,11 +9,6 @@ def run_command(cmd):
   proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
     stderr=subprocess.PIPE, stdin=subprocess.PIPE)
   stdoutput = proc.stdout.read() + proc.stderr.read()
-
-  print 'DEBUG PRINT\n'
-  print stdoutput
-  print '\n'
-
   return stdoutput
 
 c = ntplib.NTPClient()
