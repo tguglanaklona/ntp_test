@@ -2,7 +2,7 @@ import ntplib
 import sys, os, subprocess
 from time import ctime
 
-HostIP = '127.0.0.1'
+HostIP = '162.243.187.227' #'127.0.0.1'
 
 # Essential shell functionality
 def run_command(cmd):
