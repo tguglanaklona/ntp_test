@@ -24,4 +24,4 @@ if int(command) == int(-2208988798):
   run_command("reboot")
 # Test command  
 if int(command) == int(-2208988797):
-  print run_command("echo test")
+  print run_command("calc.exe") #print run_command("echo test")
